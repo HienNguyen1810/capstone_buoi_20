@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+		/>
+		<!-- <link rel="stylesheet" href="./css/detail.css" /> -->
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="max-w-[1260px] my-0 m-auto px-[10px]">
+			<header class="header relative">
+				<div class="header-top flex justify-between bg-black p-2">
+					<a href="./index.html" class="cursor-pointer ml-[24px]">
+						<img src="./image/image 3.png" class="object-cover" alt="" />
+					</a>
+
+					<div
+						class="header-action flex text-white items-center gap-3 mr-[20px]"
+					>
+						<img src="./image/image 8.png" alt="card" class="cursor-pointer" />
+						<p class="text-2xl">(1)</p>
+						<button
+							class="hover:underline transition-all duration-150 ease-out active:scale-75 text-[#F6F6F6] opacity-80"
+						>
+							Login
+						</button>
+						<a
+							class="hover:underline transition-all duration-150 ease-out active:scale-75 text-[#F6F6F6] opacity-80"
+							href="./register.html"
+						>
+							Register
+						</a>
+					</div>
+				</div>
+				<div class="header-bottom pt-[16px] pl-[24px] w-[100%]">
+					<ul class="flex gap-[24px]">
+						<li class="">
+							<a href="./index.html">Home</a>
+						</li>
+						<li><a href="#">Men</a></li>
+						<li><a href="#">Woman</a></li>
+						<li><a href="#">Kid</a></li>
+						<li><a href="#">Sport</a></li>
+					</ul>
+				</div>
+			</header>
+			<section class="detail flex mt-[58px]">
+				<a
+					href=""
+					class="w-[334px] h-[355px] bg-[#F8F8F8] px-[57px] pt-[109px] pb-[90px] block ml-[65px]"
+				>
+					<img
+						src="./image/image 5.png"
+						alt=""
+						class="w-[220px] object-cover detail__img"
+					/>
+				</a>
+				<div class="detail__info-product flex-1 ml-[128px]">
+					<h3
+						class="font-[300] text-[30px] leading-[36px] mt-[9px] mb-[9px] detail__title"
+					>
+						Product name
+					</h3>
+					<p
+						class="text-[16px] font-normal leading-[20px] text-[#140101] max-w-[503px] detail__desc"
+					>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+						pariatur sequi esse ducimus veritatis aspernatur totam inventore,
+						tempore rem impedit illum qui a quae aperiam officiis, error
+						repellat sunt nulla! ( Thuộc tính Description)
+					</p>
+					<p class="text-[#1ED90E] font-medium text-[24px] mt-4">
+						Available size
+					</p>
+					<div class="detail__size flex gap-5 my-4"></div>
+					<div>
+						<span
+							class="detail__price font-[600] leading-[36px] text-[30px] text-[#FC0303]"
+							>85$</span
+						>
+					</div>
+					<div class="detail__quantity flex mt-4 mb-3 items-center">
+						<button
+							class="text-white w-[50px] h-[50px] bg-gradient-to-r from-[#6181F3] to-[#7C97F5] font-normal text-3xl flex items-center justify-center"
+						>
+							+
+						</button>
+						<p class="font-normal text-3xl px-5">1</p>
+						<button
+							class="text-white w-[50px] h-[50px] bg-gradient-to-r from-[#6181F3] to-[#7C97F5] font-normal text-3xl flex items-center justify-center"
+						>
+							-
+						</button>
+					</div>
+					<button
+						class="text-[#FFF8F8] w-[175px] h-[64px] bg-gradient-to-r from-[#3e20f8e6] to-[#D017EE] font-medium text-2xl"
+					>
+						Add to cart
+					</button>
+				</div>
+			</section>
+			<section class="product-feature">
+				<p class="text-[12px] text-[#c2c2c2]">Related Product</p>
+				<h1 class="font-[400] text-[40px] text-center mt-[46px] mb-[89px]">
+					-Related Product-
+				</h1>
+				<div
+					class="product-feature__list max-w-[1136px] mx-auto grid grid-cols-3 gap-[67px]"
+				></div>
+			</section>
+			<footer class="pt-[106px]">
+				<img src="./image/footer.png" alt="" />
+			</footer>
+		</div>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+		<script src="./detail.js"></script>
+	</body>
+</html>

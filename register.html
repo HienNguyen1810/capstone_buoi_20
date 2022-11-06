@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.5/dist/sweetalert2.min.css"
+		/>
+		<link rel="stylesheet" href="./css/register.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="max-w-[1260px] my-0 m-auto px-[10px]">
+			<header class="header relative">
+				<div class="header-top flex justify-between bg-black p-2">
+					<a href="./index.html" class="cursor-pointer ml-[24px]">
+						<img src="./image/image 3.png" class="object-cover" alt="" />
+					</a>
+
+					<div
+						class="header-action flex text-white items-center gap-3 mr-[20px]"
+					>
+						<img src="./image/image 8.png" alt="card" class="cursor-pointer" />
+						<p class="text-2xl">(1)</p>
+						<button
+							class="hover:underline transition-all duration-150 ease-out active:scale-75 text-[#F6F6F6] opacity-80"
+						>
+							Login
+						</button>
+						<a
+							class="hover:underline transition-all duration-150 ease-out active:scale-75 text-[#F6F6F6] opacity-80"
+							href="./register.html"
+						>
+							Register
+						</a>
+					</div>
+				</div>
+				<div class="header-bottom pt-[16px] pl-[24px] w-[100%]">
+					<ul class="flex gap-[24px]">
+						<li class="">
+							<a href="./index.html">Home</a>
+						</li>
+						<li><a href="#">Men</a></li>
+						<li><a href="#">Woman</a></li>
+						<li><a href="#">Kid</a></li>
+						<li><a href="#">Sport</a></li>
+					</ul>
+				</div>
+			</header>
+			<section class="form-register px-[120px]">
+				<h3
+					class="text-center text-[40px] font-normal leading-[36px] mt-[30px] mb-[62px]"
+				>
+					Register
+				</h3>
+				<form class="grid grid-cols-2 gap-x-24 gap-y-4">
+					<div class="input-control w-[100%] h-20">
+						<input
+							id="email"
+							name="email"
+							value=""
+							type="text"
+							class="border-0 outline-0 border-b-2 border-solid w-[100%] border-t-0 pb-[15px] text-[30px] font-normal"
+							placeholder="email"
+						/>
+						<p class="mt-2 text-[red]"></p>
+					</div>
+					<div class="input-control w-[100%] h-20">
+						<input
+							id="name"
+							name="name"
+							value=""
+							type="text"
+							class="border-0 outline-0 border-b-2 border-solid w-[100%] pb-[15px] text-[30px] font-normal"
+							placeholder="name"
+						/>
+						<p class="mt-2 text-[red]"></p>
+					</div>
+					<div class="input-control w-[100%] h-20">
+						<input
+							id="password"
+							name="password"
+							value=""
+							type="text"
+							class="border-0 outline-0 border-b-2 border-solid w-[100%] pb-[15px] text-[30px] font-normal"
+							placeholder="password"
+						/>
+						<p class="mt-2 text-[red]"></p>
+					</div>
+					<div class="input-control w-[100%] h-20">
+						<input
+							id="phone"
+							name="phone"
+							value=""
+							type="text"
+							class="border-0 outline-0 border-b-2 border-solid w-[100%] pb-[15px] text-[30px] font-normal"
+							placeholder="phone"
+						/>
+						<p class="mt-2 text-[red]"></p>
+					</div>
+					<div class="input-control w-[100%] h-20">
+						<input
+							id="passwordConfirm"
+							name="passwordConfirm"
+							value=""
+							type="text"
+							class="border-0 outline-0 border-b-2 border-solid w-[100%] pb-[15px] text-[30px] font-normal"
+							placeholder="password confirm"
+						/>
+						<p class="mt-2 text-[red]"></p>
+					</div>
+					<div class="check-box-group flex items-center">
+						<h4 class="pr-[28px]">Gender</h4>
+						<div class="pr-[129px]">
+							<input
+								type="radio"
+								name="gender"
+								id="male"
+								value="true"
+								checked
+							/>
+							<label for="male">Male</label>
+						</div>
+						<div>
+							<input type="radio" name="gender" id="female" value="false" />
+							<label for="female">Female</label>
+						</div>
+					</div>
+					<div></div>
+					<div>
+						<button
+							class="bg-[#AE18E2] text-[30px] font-normal leading-[36px] text-white w-[291px] h-[50px]"
+							type="submit"
+						>
+							Submit
+						</button>
+					</div>
+				</form>
+			</section>
+			<footer class="pt-[106px]">
+				<img src="./image/footer.png" alt="" />
+			</footer>
+		</div>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.5/dist/sweetalert2.min.js"></script>
+		<script defer src="./register.js"></script>
+	</body>
+</html>
